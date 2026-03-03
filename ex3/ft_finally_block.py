@@ -1,9 +1,8 @@
-def water_plants(plant_list) -> None:
+def water_plants(plant_list: str) -> None:
     print("Opening watering system!")
     try:
-        pass
+        print("")
     except Exception as e:
-        raise 
+        print({e})
     finally:
-        print("Closing watering system (cleanup)")
-
+        print("Closing watering system (cleanup)\n")
