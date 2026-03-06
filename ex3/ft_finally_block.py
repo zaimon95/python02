@@ -2,7 +2,7 @@ def water_plants(plant_list: list[str]) -> None:
     print("Opening watering system")
     try:
         for plant in plant_list:
-            if plant is None or not isinstance(plant, str):
+            if not plant or not isinstance(plant, str):
                 raise ValueError(f"Cannot water {plant} - invalid plant!")
             print(f"Watering {plant}")
     except ValueError as e:
