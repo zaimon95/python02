@@ -1,4 +1,4 @@
-def water_plants(plant_list: list[str]) -> None:
+def water_plants(plant_list: list[str | None]) -> None:
     print("Opening watering system")
     try:
         for plant in plant_list:
@@ -28,6 +28,7 @@ def test_watering_system() -> None:
         print("Watering completed successfully!")
     except ValueError:
         print("\nCleanup always happens, even with errors!")
+
 
 if __name__ == "__main__":
     test_watering_system()
