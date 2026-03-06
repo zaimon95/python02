@@ -51,7 +51,7 @@ class GardenManager:
 
     def check_water_tank(self) -> None:
         if self.water_tank <= 0:
-            raise WaterTankError("Not enough water in tank")
+            raise WaterTankError(e)
 
 
 def test_garden_management() -> None:
@@ -95,4 +95,5 @@ def test_garden_management() -> None:
     print("\nGarden management system test complete!")
 
 
-test_garden_management()
+if __name__ == "__main__":
+    test_garden_management()
